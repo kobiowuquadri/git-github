@@ -16,6 +16,10 @@ body {
     height: 100vh;
 }
 
+a {
+    text-decoration: none;
+}
+
 h1 {
     font-size: 5rem;
 }
@@ -27,7 +31,6 @@ p {
 
 button {
     background-color: blueviolet;
-    color: white;
     border: none;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     padding: 10px 20px;
@@ -36,8 +39,30 @@ button {
     transition: background-color 0.3s, transform 0.3s;
 }
 
+button a {
+    color: white;
+}
+
 button:hover {
     background-color: white;
-    color: blueviolet;
     transform: scale(1.05);
+}
+
+button:hover a {
+    color: blueviolet;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.container a {
+    color: white;
+    text-decoration: none;
+}
+.container a:hover {
+    color: blueviolet;
 }
